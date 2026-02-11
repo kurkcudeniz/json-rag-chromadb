@@ -1,0 +1,59 @@
+{
+  "title": "RAG Systems Complete Guide",
+  "author": "AI Research Lab",
+  "chapters": [
+    {
+      "chapter_num": 1,
+      "title": "Introduction to RAG",
+      "sections": [
+        {
+          "section_title": "What is RAG?",
+          "content": "RAG (Retrieval-Augmented Generation) combines information retrieval with text generation. It first retrieves relevant documents from a knowledge base, then uses them to generate accurate responses. This approach significantly improves accuracy compared to pure generation.",
+          "page": 5
+        },
+        {
+          "section_title": "Why RAG Matters",
+          "content": "Traditional LLMs have knowledge cutoffs and can hallucinate. RAG solves this by grounding responses in actual documents. It enables LLMs to access up-to-date information and domain-specific knowledge without retraining.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "chapter_num": 2,
+      "title": "Vector Databases",
+      "sections": [
+        {
+          "section_title": "Qdrant Overview",
+          "content": "Qdrant is a vector database optimized for similarity search. It uses HNSW algorithm for fast retrieval even with millions of vectors. Qdrant supports filtering, which allows combining semantic search with metadata queries.",
+          "page": 23
+        },
+        {
+          "section_title": "Pinecone Features",
+          "content": "Pinecone is a managed vector database service. It handles infrastructure automatically - scaling, backups, and updates. Pinecone excels at production deployments with features like namespaces and metadata filtering.",
+          "page": 28
+        },
+        {
+          "section_title": "ChromaDB Basics",
+          "content": "ChromaDB is an open-source vector database designed for AI applications. It's lightweight and easy to use, perfect for development and small-scale deployments. ChromaDB stores embeddings locally by default.",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "chapter_num": 3,
+      "title": "Chunking Strategies",
+      "sections": [
+        {
+          "section_title": "Character-Based Chunking",
+          "content": "Character-based chunking splits text at fixed intervals, like every 500 characters. Simple but can break sentences. Add overlap (e.g., 50 characters) to preserve context across chunks. Use RecursiveCharacterTextSplitter for better results.",
+          "page": 45
+        },
+        {
+          "section_title": "Semantic Chunking",
+          "content": "Semantic chunking splits text at natural boundaries - paragraphs, sentences, or topics. Preserves meaning by keeping related content together. More expensive to compute but yields better retrieval accuracy.",
+          "page": 49
+        }
+      ]
+    }
+  ]
+}
